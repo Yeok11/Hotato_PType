@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 enum TileType
 {
@@ -144,5 +145,12 @@ public class GameManager : MonoBehaviour
         }
 
         nextPlayerState = TileType.None;
+        if (enemy.Hp <= 0)
+        {
+            Debug.Log("ÀûÀ» ¾²·¯¶ß·È´Ù.");
+
+            StageManager.nowStage += 1;
+            SceneManager.LoadScene(1);   
+        }
     }
 }
