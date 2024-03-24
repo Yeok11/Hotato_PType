@@ -12,7 +12,7 @@ public class Stage : MonoBehaviour
         if (StageManager.nowStage <= StageNum)
         {
             StageManager.nowStage = StageNum;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
