@@ -11,4 +11,5 @@ public class Data
     public static int diceCnt = 2;
     public static int canMoveCnt = 0;
 
+   
 }
